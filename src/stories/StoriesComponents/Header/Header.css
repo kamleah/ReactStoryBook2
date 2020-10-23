@@ -1,0 +1,35 @@
+body{
+    padding: 0;
+}
+.iskartHeader{   
+    background: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    flex: 5;
+}
+.cartSection img{
+    height: 100px;
+    width: 50px;
+}
+
+.HeaderSection{
+    display: flex;
+    justify-content: center;
+    flex: 4;
+}
+.LogoSection{
+    flex: 1;
+}
+.cartSection{
+    flex: 1;
+}
+.productView{
+    padding: 10px;
+}
+.productView{
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    grid-gap: 7px;
+}

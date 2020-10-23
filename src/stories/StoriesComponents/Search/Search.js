@@ -1,0 +1,27 @@
+import React from 'react'
+import PropTypes from 'prop-types'
+import './Search.css'
+function Search({backgroundColor,color,...props}) {
+    return (
+        <div className="Search">
+            <button type="submit" className="SearchButton"  
+            
+            style={backgroundColor && {backgroundColor}} {...props}
+            ><p style={color && {color}}>Search</p></button>
+        </div>
+    )
+}
+
+Search.propTypes = {
+    backgroundColor:PropTypes.string,
+    
+}
+Search.defaultProps = {
+    backgroundColor: null,
+    // primary: false,
+    // size: 'medium',
+    // onClick: undefined,
+    
+  };
+export default Search
+
