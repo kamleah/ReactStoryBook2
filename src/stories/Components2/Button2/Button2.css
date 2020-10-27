@@ -1,0 +1,27 @@
+.button2{
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    font-size: 14px;
+    font-weight: 500;
+    
+}
+.button2:focus{
+    outline: none;
+    width: 150px;
+    padding: 10px;
+    border-radius: 25px;
+    background-color: white;
+    color: deepskyblue;
+    border: 1px solid deepskyblue;
+    font-size: 14px;
+    font-weight: 500;
+}
+.button2:hover{
+    background-color: deepskyblue;
+    color: white;
+    border: 1px solid white;
+}

@@ -1,0 +1,17 @@
+.input3Label {
+    top: 20px;
+    position: absolute;
+    font-size: 18px;
+}
+.input3Label:focus{
+    top: 2px;
+    font-size: 15px;
+    outline: none;
+    color: red;
+    position: absolute;
+}
+
+.InputWithGrideient:focus{
+    border-bottom: 2px solid;
+  border-image: conic-gradient(#a8ff78,#78ffd6) 1;
+}

@@ -1,0 +1,26 @@
+.layer2 {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 50px;
+    row-gap: 15px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+.layer2 li{
+    list-style: none;
+}
+.layer2 a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+.layer2 a:hover{
+    border-bottom: 2px solid white;
+    padding-bottom: 5px;
+    
+}
+.layer2{
+    margin-top: 40px;
+}

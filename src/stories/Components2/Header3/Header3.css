@@ -1,0 +1,9 @@
+*{
+    margin: 0;padding: 0;
+}
+.DropDownMenu{
+    background-color: red;
+}
+.DDMenu > ul{
+    background-color: red;
+}

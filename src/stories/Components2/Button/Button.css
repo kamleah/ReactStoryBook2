@@ -1,0 +1,33 @@
+.buttons{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.primarys {background-color: #008CBA;}
+.secondarys{background-color: #e7e7e7;}
+.successs{background-color: #4caf50;}
+.dangers{background-color: #f44336;}
+
+.smalls{
+    height: 2rem;
+    font-size: 0.875rem;
+    width: 140px;
+}
+.mediums{
+    height:5.5rem;
+    font-size: 1rem;
+}
+.larges{
+    height: 7rem;
+    font-size: 1.25rem;
+}
