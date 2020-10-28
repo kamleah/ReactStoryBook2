@@ -1,0 +1,115 @@
+.cardmain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+.card {
+  height: 300px;
+  display: flex;
+  width: 100%;
+  border: 2px solid;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.smallImagecontent {
+  border-radius: 50%;
+  border: 2px solid;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 56px;
+  width: 50px;
+  padding: 0px;
+  background-size: cover;
+  display: flex;
+  margin-top: 170px;
+  position: absolute;
+  margin-left: 10px;
+}
+.shopName {
+  color: wheat;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  width: 100%;
+  position: absolute;
+  margin-top: 21%;
+  display: flex;
+  justify-content: center;
+}
+.shopName p {
+  color: wheat;
+  background: rosybrown;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+.shopAddress {
+  color: wheat;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 25px;
+  letter-spacing: 1px;
+  word-spacing: 7px;
+  width: 100%;
+  display: flex;
+  position: absolute;
+  margin-top: 25%;
+}
+.shopAddress p {
+  color: wheat;
+  background: rosybrown;
+  width: auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .shopName {
+    margin-top: 40%;
+  }
+  .shopAddress {
+    margin-top: 48%;
+  }
+  .smallImagecontent {
+    margin-top: 5%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 767px) {
+  .shopName {
+    margin-top: 40%;
+  }
+  .shopAddress {
+    margin-top: 48%;
+  }
+  .smallImagecontent {
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .shopName {
+    margin-top: 22%;
+  }
+  .shopAddress {
+    margin-top: 26%;
+  }
+  .smallImagecontent {
+    margin-top: 23%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .shopName {
+    margin-top: 13%;
+  }
+  .shopAddress {
+    margin-top: 18%;
+  }
+  .smallImagecontent {
+    margin-top: 16%;
+  }
+}

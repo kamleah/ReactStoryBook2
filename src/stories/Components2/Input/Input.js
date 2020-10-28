@@ -1,17 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
-function Input({type,placeholder}) {
-    return (
-        <div>
-            <input type={type} placeholder={placeholder}/>
-        </div>
-    )
+function Input({ type, placeholder }) {
+  return (
+    <div>
+      <input type={type} placeholder={placeholder} />
+    </div>
+  );
 }
 
-Input.propTypes = {
+Input.propTypes = {};
 
-}
-
-export default Input
-
+export default Input;

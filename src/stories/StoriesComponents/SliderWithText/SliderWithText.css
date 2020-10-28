@@ -1,73 +1,82 @@
-.SliderWithText{
-    /* border: 1px solid red; */
-    position: relative;
-    width: 100%;
-    /* height: 100vh; */
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    overflow: hidden;
+.SliderWithText {
+  position: relative;
+  width: 100%;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
 }
-.slideWithText{
-    display: flex;
-    justify-content: center;
-    position: relative;
-    /* border: 1px solid blue; */
-    min-width: 100%;
-    height: 80vh;
-    transition: 0.5s;
-
-    
+.slideWithText {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  min-width: 100%;
+  height: 500px;
+  transition: 0.5s;
 }
-.slideWithText1{
-    display: flex;
-    /* transition: linear 0.5s ; */
+.slideWithText1 {
+  display: flex;
 }
 
-.TextTwo{
-    position: absolute;
-    top: 90%;
-    color: black;
+.TextTwo {
+  position: absolute;
+  top: 85%;
+  color: black;
 }
-.slideWithText img{
-    width: 100%;
-    
+.slideWithText img {
+  width: 100%;
 }
-.TextOne{
-    position: absolute;    
-    top: 75%;
-    color: black;
-    font-size: 52px;
-    font-weight: 500;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
+.TextOne {
+  position: absolute;
+  top: 65%;
+  color: black;
+  font-size: 52px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
-#goLeft{
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translateY(-50%);
-    border-radius: 50%;
-    outline: none;
-    border: 1px solid darkblue;
-    height: 60px;
-    width: 60px;    
+.TextOne p{
+  padding: 10px;
+  border-radius: 10px;
 }
-#goRight{
-    position: absolute;
-    top: 50%;
-    right: 40px;
-    transform: translateX(50%);
-    border-radius: 50%;
-    outline: none;
-    border: 1px solid darkblue;
-    height: 60px;
-    width: 60px;
+.TextTwo p{
+  padding: 10px;
+  border-radius: 10px;
 }
-#goLeft, #goRight p{
-    font-size: 40px;
+#goLeft {
+  position: absolute;
+  top: 271px;
+  left: 10px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid darkblue;
+  height: 60px;
+  width: 60px;
+}
+#goRight {
+  position: absolute;
+  top: 245px;
+  right: 40px;
+  transform: translateX(50%);
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid darkblue;
+  height: 60px;
+  width: 60px;
+}
+#goLeft,
+#goRight p {
+  font-size: 40px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 568px) {
+ .TextOne{
+   
+   font-size: 25px;
+ } 
 }

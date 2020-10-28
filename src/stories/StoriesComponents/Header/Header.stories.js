@@ -1,18 +1,10 @@
-import React from 'react'
-import Header from './Header'
+import React from "react";
+import Header from "./Header";
 
-export default{
-    title:'Header&Footer/Header',
-    component:Header,
-    argTypes: {
-        backgroundColor: { control: 'color' },
-        
-        
-          },
-          
-    
-}
+export default {
+  title: "Header&Footer/Header",
+  component: Header,
+};
 
- const HeaderTemplates = (args) => <Header   {...args }/>
- export const ViewHeader = HeaderTemplates.bind({});
-
+const HeaderTemplates = (args) => <Header {...args} />;
+export const ViewHeader = HeaderTemplates.bind({});

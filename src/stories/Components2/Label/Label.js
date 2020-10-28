@@ -1,17 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
 
-function Label({text,labelFor}) {
-    return (
-        <div>
-            <label className="" for={labelFor}>{text}</label>
-        </div>
-    )
+function Label({ text, labelFor }) {
+  return (
+    <div>
+      <label className="" for={labelFor}>
+        {text}
+      </label>
+    </div>
+  );
 }
 
-Label.propTypes = {
+Label.propTypes = {};
 
-}
-
-export default Label
-
+export default Label;

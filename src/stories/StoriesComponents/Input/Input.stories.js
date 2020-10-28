@@ -1,19 +1,14 @@
-import React from 'react'
-import Input from './Input'
+import React from "react";
+import Input from "./Input";
 
-export default{
-    title:'Inputs Tags/InputSearch',
-    component:Input,
-    // argTypes: {
-    //     backgroundColor: { control: 'color' },
-    //     background:{control:'color'},
-    //     color:{control:'color'},
-        
-    //       },
-          
-    
-}
+export default {
+  title: "Inputs Tags/InputSearch",
+  component: Input,
+  argTypes: {
+    background: { control: "color" },
+    onClick: { click: "Clicked" },
+  },
+};
 
- const InputTemplates = (args) => <Input  {...args }/>
- export const InputSearch = InputTemplates.bind({});
-
+const InputTemplates = (args) => <Input {...args} />;
+export const InputSearch = InputTemplates.bind({});

@@ -1,25 +1,23 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-
-function Logo({img,imgalt,backgroundColor}) {
-    return (
-            <div className="LogoSection" style={backgroundColor && {backgroundColor}}>
-                <img src={img} alt={imgalt} />
-            </div>
-    )
+import React from "react";
+import PropTypes from "prop-types";
+import "./Logo.css";
+function Logo({ img, imgalt, backgroundColor }) {
+  return (
+    <div className="LogoSection" style={backgroundColor && { backgroundColor }}>
+      <img src={img} alt={imgalt} height="50" />
+    </div>
+  );
 }
-
 Logo.propTypes = {
-    img:PropTypes.string,
-    imgalt:PropTypes.string,
-    backgroundColor:PropTypes.string
-}
-Logo.defaultProps={
-    img:"https://mlqk1lj70spp.i.optimole.com/_CM4LjY-jNyWhnzb/w:127/h:34/q:auto/https://idskart.com/wp-content/uploads/2020/09/New_log.png",
-    imgalt:"Best Online Shopping",
-    backgroundColor:null
+  img: PropTypes.string,
+  imgalt: PropTypes.string,
+  backgroundColor: PropTypes.string,
+};
+Logo.defaultProps = {
+  img:
+    "https://th.bing.com/th/id/OIP.LgboDRAvGDzEkWaojRhJjQHaEC?w=277&h=180&c=7&o=5&pid=1.7",
+  imgalt: "Best Online Shopping",
 
-}
-
-export default Logo
-
+  backgroundColor: null,
+};
+export default Logo;

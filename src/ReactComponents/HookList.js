@@ -1,27 +1,43 @@
-import React from 'react'
+import React, { Component } from 'react'
 import axios from 'axios';  
 import { useState, useEffect } from 'react'
+import { useHistory } from "react-router-dom";
 
 const HookList = (props) => {
-    const [data, setData] = useState([]);  
+   const [data, setData] = useState([]); 
+    const history = useHistory(); 
         
         useEffect(() => {  
             
                 const GetData = async () => {            
-                  const result = await axios('http://127.0.0.1:8000/');            
-                  setData(result.data);              
+                  const result = await axios('http://127.0.0.1:8000/books/');            
+                  setData(result.data);      
+                          
                 };            
                 GetData();            
-              }, []);       
+              }, []); 
+              
+            
                     
               const deletestudent = (id) => {             
-                debugger;         
-                axios.delete('http://localhost/ReactJs/delete.php?id=' + id)             
-                  .then((result) => {             
-                    props.history.push('/hooklist')             
-                  });              
-              };  
+                if(window.confirm("Are You Sure")){
+                  debugger;         
+                axios.delete('http://127.0.0.1:8000/books/'+id+'/',{
+                  method:'DELETE',
+                  header:{'Accept':'application/json',
+                  'content-Type':'application/json'
+                }
+                
+                })             
+                  .then((result) => {   
+                    history.push('/shop');
+                                                                      
+                  });
+                }              
+              }; 
             
+              
+
               const editstudent = (id) => {              
                 props.history.push({              
                   pathname: '/hookedit/' + id 
@@ -41,6 +57,7 @@ const HookList = (props) => {
                     <th>id</th>  
 
                     <th>frameworks</th>  
+                    <th>Images</th>  
 
                     
 
@@ -58,7 +75,8 @@ const HookList = (props) => {
 
                         <td>{item.id}</td>  
 
-                        <td>{item.frameworks}</td>  
+                        <td>{item.title}</td>  
+                        <td><img src={`http://127.0.0.1:8000${item.covers}`}alt={item.title} height="150" width="150" /></td>  
 
                                              
 

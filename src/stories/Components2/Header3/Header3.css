@@ -1,9 +1,10 @@
-*{
-    margin: 0;padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
-.DropDownMenu{
-    background-color: red;
+.DropDownMenu {
+  background-color: red;
 }
-.DDMenu > ul{
-    background-color: red;
+.DDMenu > ul {
+  background-color: red;
 }

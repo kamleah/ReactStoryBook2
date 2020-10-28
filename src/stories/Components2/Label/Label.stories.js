@@ -1,13 +1,9 @@
-import React from 'react'
-import Label from './Label'
+import React from "react";
+import Label from "./Label";
 
-export default{
-    title:'Form/Label',
-    component:Label
-}
+export default {
+  title: "Form/Label",
+  component: Label,
+};
 
-export const Labels = () => <Label
-labelFor="abc"
-text="Sign up"
-
-/>
+export const Labels = () => <Label labelFor="abc" text="Sign up" />;
